@@ -3,6 +3,7 @@
 require 'helper'
 
 class TestFakerNameNL < Test::Unit::TestCase
+
   def setup
     @tester = FFaker::NameNL
   end
