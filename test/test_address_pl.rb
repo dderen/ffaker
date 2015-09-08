@@ -17,7 +17,7 @@ class TestAddressPL < Test::Unit::TestCase
   end
 
   def test_street_nbr
-    assert_match /[ 0-9]{1,3}[ab]?]/, @tester.street_nbr
+    assert_match /[ 0-9]{1,3}[ab]?/, @tester.street_nbr
   end
 
   def test_zip_code
@@ -29,6 +29,6 @@ class TestAddressPL < Test::Unit::TestCase
   end
 
   def test_full_address
-    assert_match /[ A-Za-z\.\-]+]/, @tester.full_address
+    assert_match /[ A-Za-z0-9\.\-,]+/, @tester.full_address
   end
 end
